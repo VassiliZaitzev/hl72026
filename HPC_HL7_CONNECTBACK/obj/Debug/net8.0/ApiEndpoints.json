@@ -1,0 +1,42 @@
+[
+  {
+    "ContainingType": "HPC_HL7_CONNECTBACK.Controllers.AdmisionController",
+    "Method": "test",
+    "RelativePath": "api/Admision/test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "HPC_HL7_CONNECTBACK.Controllers.CategorizacionController",
+    "Method": "test",
+    "RelativePath": "api/Categorizacion/test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

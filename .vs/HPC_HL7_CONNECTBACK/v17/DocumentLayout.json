@@ -1,0 +1,162 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D57F73F1-2DA6-4D32-BB56-747F299EFA4B}|02_BusinessLogic\\02_BusinessLogic.csproj|c:\\01.- fuentes\\01.-crs\\connectathon\\hpc.hl7.backend\\02_businesslogic\\clases\\categorizacionbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D57F73F1-2DA6-4D32-BB56-747F299EFA4B}|02_BusinessLogic\\02_BusinessLogic.csproj|solutionrelative:02_businesslogic\\clases\\categorizacionbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A88E5CAC-A52D-45D2-BBAE-0BCA6BFED545}|HPC_HL7_CONNECTBACK\\HPC_HL7_CONNECTBACK.csproj|c:\\01.- fuentes\\01.-crs\\connectathon\\hpc.hl7.backend\\hpc_hl7_connectback\\controllers\\admisioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A88E5CAC-A52D-45D2-BBAE-0BCA6BFED545}|HPC_HL7_CONNECTBACK\\HPC_HL7_CONNECTBACK.csproj|solutionrelative:hpc_hl7_connectback\\controllers\\admisioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A88E5CAC-A52D-45D2-BBAE-0BCA6BFED545}|HPC_HL7_CONNECTBACK\\HPC_HL7_CONNECTBACK.csproj|c:\\01.- fuentes\\01.-crs\\connectathon\\hpc.hl7.backend\\hpc_hl7_connectback\\controllers\\categorizacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A88E5CAC-A52D-45D2-BBAE-0BCA6BFED545}|HPC_HL7_CONNECTBACK\\HPC_HL7_CONNECTBACK.csproj|solutionrelative:hpc_hl7_connectback\\controllers\\categorizacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C063B7-013C-487A-ACF0-AE339E7ED3B3}|01_DataLogic\\01_DataLogic.csproj|c:\\01.- fuentes\\01.-crs\\connectathon\\hpc.hl7.backend\\01_datalogic\\clases\\admisiondal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27C063B7-013C-487A-ACF0-AE339E7ED3B3}|01_DataLogic\\01_DataLogic.csproj|solutionrelative:01_datalogic\\clases\\admisiondal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D57F73F1-2DA6-4D32-BB56-747F299EFA4B}|02_BusinessLogic\\02_BusinessLogic.csproj|c:\\01.- fuentes\\01.-crs\\connectathon\\hpc.hl7.backend\\02_businesslogic\\clases\\admisionbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D57F73F1-2DA6-4D32-BB56-747F299EFA4B}|02_BusinessLogic\\02_BusinessLogic.csproj|solutionrelative:02_businesslogic\\clases\\admisionbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D57F73F1-2DA6-4D32-BB56-747F299EFA4B}|02_BusinessLogic\\02_BusinessLogic.csproj|c:\\01.- fuentes\\01.-crs\\connectathon\\hpc.hl7.backend\\02_businesslogic\\interfaces\\iadmisionbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D57F73F1-2DA6-4D32-BB56-747F299EFA4B}|02_BusinessLogic\\02_BusinessLogic.csproj|solutionrelative:02_businesslogic\\interfaces\\iadmisionbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C063B7-013C-487A-ACF0-AE339E7ED3B3}|01_DataLogic\\01_DataLogic.csproj|c:\\01.- fuentes\\01.-crs\\connectathon\\hpc.hl7.backend\\01_datalogic\\clases\\categorizaciondal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27C063B7-013C-487A-ACF0-AE339E7ED3B3}|01_DataLogic\\01_DataLogic.csproj|solutionrelative:01_datalogic\\clases\\categorizaciondal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D57F73F1-2DA6-4D32-BB56-747F299EFA4B}|02_BusinessLogic\\02_BusinessLogic.csproj|c:\\01.- fuentes\\01.-crs\\connectathon\\hpc.hl7.backend\\02_businesslogic\\interfaces\\icategorizacionbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D57F73F1-2DA6-4D32-BB56-747F299EFA4B}|02_BusinessLogic\\02_BusinessLogic.csproj|solutionrelative:02_businesslogic\\interfaces\\icategorizacionbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategorizacionController.cs",
+              "DocumentMoniker": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\HPC_HL7_CONNECTBACK\\Controllers\\CategorizacionController.cs",
+              "RelativeDocumentMoniker": "HPC_HL7_CONNECTBACK\\Controllers\\CategorizacionController.cs",
+              "ToolTip": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\HPC_HL7_CONNECTBACK\\Controllers\\CategorizacionController.cs",
+              "RelativeToolTip": "HPC_HL7_CONNECTBACK\\Controllers\\CategorizacionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T20:10:16.64Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdmisionController.cs",
+              "DocumentMoniker": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\HPC_HL7_CONNECTBACK\\Controllers\\AdmisionController.cs",
+              "RelativeDocumentMoniker": "HPC_HL7_CONNECTBACK\\Controllers\\AdmisionController.cs",
+              "ToolTip": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\HPC_HL7_CONNECTBACK\\Controllers\\AdmisionController.cs",
+              "RelativeToolTip": "HPC_HL7_CONNECTBACK\\Controllers\\AdmisionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T20:10:16.072Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdmisionDAL.cs",
+              "DocumentMoniker": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\01_DataLogic\\Clases\\AdmisionDAL.cs",
+              "RelativeDocumentMoniker": "01_DataLogic\\Clases\\AdmisionDAL.cs",
+              "ToolTip": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\01_DataLogic\\Clases\\AdmisionDAL.cs",
+              "RelativeToolTip": "01_DataLogic\\Clases\\AdmisionDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T20:13:55.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdmisionBL.cs",
+              "DocumentMoniker": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\02_BusinessLogic\\Clases\\AdmisionBL.cs",
+              "RelativeDocumentMoniker": "02_BusinessLogic\\Clases\\AdmisionBL.cs",
+              "ToolTip": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\02_BusinessLogic\\Clases\\AdmisionBL.cs",
+              "RelativeToolTip": "02_BusinessLogic\\Clases\\AdmisionBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T20:13:35.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategorizacionDAL.cs",
+              "DocumentMoniker": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\01_DataLogic\\Clases\\CategorizacionDAL.cs",
+              "RelativeDocumentMoniker": "01_DataLogic\\Clases\\CategorizacionDAL.cs",
+              "ToolTip": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\01_DataLogic\\Clases\\CategorizacionDAL.cs",
+              "RelativeToolTip": "01_DataLogic\\Clases\\CategorizacionDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T20:12:42.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategorizacionBL.cs",
+              "DocumentMoniker": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\02_BusinessLogic\\Clases\\CategorizacionBL.cs",
+              "RelativeDocumentMoniker": "02_BusinessLogic\\Clases\\CategorizacionBL.cs",
+              "ToolTip": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\02_BusinessLogic\\Clases\\CategorizacionBL.cs",
+              "RelativeToolTip": "02_BusinessLogic\\Clases\\CategorizacionBL.cs",
+              "ViewState": "AgIAAGMCAAAAAAAAAAAAAIICAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T20:12:16.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAdmisionBL.cs",
+              "DocumentMoniker": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\02_BusinessLogic\\Interfaces\\IAdmisionBL.cs",
+              "RelativeDocumentMoniker": "02_BusinessLogic\\Interfaces\\IAdmisionBL.cs",
+              "ToolTip": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\02_BusinessLogic\\Interfaces\\IAdmisionBL.cs",
+              "RelativeToolTip": "02_BusinessLogic\\Interfaces\\IAdmisionBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T20:11:13.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ICategorizacionBL.cs",
+              "DocumentMoniker": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\02_BusinessLogic\\Interfaces\\ICategorizacionBL.cs",
+              "RelativeDocumentMoniker": "02_BusinessLogic\\Interfaces\\ICategorizacionBL.cs",
+              "ToolTip": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\02_BusinessLogic\\Interfaces\\ICategorizacionBL.cs",
+              "RelativeToolTip": "02_BusinessLogic\\Interfaces\\ICategorizacionBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T20:10:46.191Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
