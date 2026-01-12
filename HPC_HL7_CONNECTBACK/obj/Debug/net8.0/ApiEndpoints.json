@@ -20,6 +20,32 @@
     ]
   },
   {
+    "ContainingType": "HPC_HL7_CONNECTBACK.Controllers.AtencionController",
+    "Method": "recibirAtencion",
+    "RelativePath": "api/Atencion/recibirAtencion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "_00_Entities.Clases.DatosAtencionEN",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "HPC_HL7_CONNECTBACK.Controllers.CategorizacionController",
     "Method": "test",
     "RelativePath": "api/Categorizacion/test",

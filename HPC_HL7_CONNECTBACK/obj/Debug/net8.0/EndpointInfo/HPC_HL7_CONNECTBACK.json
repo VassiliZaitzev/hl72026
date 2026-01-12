@@ -34,6 +34,54 @@
         }
       }
     },
+    "/api/Atencion/recibirAtencion": {
+      "post": {
+        "tags": [
+          "Atencion"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatosAtencionEN"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatosAtencionEN"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatosAtencionEN"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Categorizacion/test": {
       "get": {
         "tags": [
@@ -64,5 +112,114 @@
       }
     }
   },
-  "components": { }
+  "components": {
+    "schemas": {
+      "DatosAtencionEN": {
+        "type": "object",
+        "properties": {
+          "nombrePaciente": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellidoPat": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellidoMat": {
+            "type": "string",
+            "nullable": true
+          },
+          "comuna": {
+            "type": "string",
+            "nullable": true
+          },
+          "derivadaDesde": {
+            "type": "string",
+            "nullable": true
+          },
+          "derivadaDesdeCorr": {
+            "type": "string",
+            "nullable": true
+          },
+          "derivadaHacia": {
+            "type": "string",
+            "nullable": true
+          },
+          "derivadaHaciaCorr": {
+            "type": "string",
+            "nullable": true
+          },
+          "sintoma": {
+            "type": "string",
+            "nullable": true
+          },
+          "medico": {
+            "type": "string",
+            "nullable": true
+          },
+          "diagnostico": {
+            "type": "string",
+            "nullable": true
+          },
+          "intervencionElectiva": {
+            "type": "string",
+            "nullable": true
+          },
+          "solicitudIq": {
+            "type": "string",
+            "nullable": true
+          },
+          "prioridad": {
+            "type": "string",
+            "nullable": true
+          },
+          "prioridadCorr": {
+            "type": "string",
+            "nullable": true
+          },
+          "entrevistaPrequirurgica": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoServicio": {
+            "type": "string",
+            "nullable": true
+          },
+          "especialidad": {
+            "type": "string",
+            "nullable": true
+          },
+          "organizacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "organizacionCorr": {
+            "type": "string",
+            "nullable": true
+          },
+          "profesionalTentativo": {
+            "type": "string",
+            "nullable": true
+          },
+          "citaProgramada": {
+            "type": "string",
+            "nullable": true
+          },
+          "rol": {
+            "type": "string",
+            "nullable": true
+          },
+          "diagnosticoCorr": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
 }

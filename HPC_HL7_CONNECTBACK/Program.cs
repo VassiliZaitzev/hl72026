@@ -18,6 +18,12 @@ builder.Services.AddControllers();
 
 builder.Services.AddScoped<ICategorizacionBL, CategorizacionBL>();
 builder.Services.AddScoped<IAdmisionBL, AdmisionBL>();
+builder.Services.AddScoped<IAtencionBL, AtencionBL>();
+
+
+
+
+
 
 
 

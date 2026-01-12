@@ -30,3 +30,25 @@
 *.exe
 *.out
 *.app
+
+
+.vs/
+
+
+
+# Build results
+bin/
+obj/
+*.pdb
+*.user
+*.rsuser
+*.suo
+*.cache
+*.dbmdl
+*.log
+*.vspscc
+*.vssscc
+
+# Visual Studio
+.vs/
+*.sln.docstates
