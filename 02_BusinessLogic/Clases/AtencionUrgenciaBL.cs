@@ -779,7 +779,254 @@ public class AtencionUrgenciaBL : IAtencionUrgenciaBL
         string Json = "";
         try
         {
-            //Json = new FhirJsonSerializer().SerializeToString(bundle);
+            var ahoraAtencion = new DateTime(2024, 12, 25, 14, 12, 0, DateTimeKind.Local);
+
+            string urnPractitionerKenobi = Guid.NewGuid().ToString();
+            string urnPractitionerAmidala = Guid.NewGuid().ToString();
+            string urnPatient = Guid.NewGuid().ToString();
+            string urnEncounter = Guid.NewGuid().ToString();
+            string urnProcedure = Guid.NewGuid().ToString();
+            string urnMedication1 = Guid.NewGuid().ToString();
+            string urnMedication2 = Guid.NewGuid().ToString();
+            string urnMedication3 = Guid.NewGuid().ToString();
+            string urnDiagnosis = Guid.NewGuid().ToString();
+
+            var bundle = new Bundle
+            {
+                Id = Guid.NewGuid().ToString(),
+                Meta = new Meta
+                {
+                    Profile = ["https://interoperabilidad.minsal.cl/fhir/ig/urgencia/StructureDefinition/BundleAtencion"]
+                },
+                Type = Bundle.BundleType.Transaction,
+                Timestamp = new DateTimeOffset(ahoraAtencion),
+                Entry = new List<Bundle.EntryComponent>()
+            };
+
+            // Practitioner - Dr. Obi-Wan Kenobi
+            bundle.Entry.Add(new Bundle.EntryComponent
+            {
+                FullUrl = "urn:uuid:" + urnPractitionerKenobi,
+                Resource = new Practitioner
+                {
+                    Id = urnPractitionerKenobi,
+                    Name = new List<HumanName>
+                    {
+                        new HumanName
+                        {
+                            Given = new string[] { "Obi-Wan" },
+                            Family = "Kenobi"
+                        }
+                    }
+                },
+                Request = new Bundle.RequestComponent
+                {
+                    Method = Bundle.HTTPVerb.POST,
+                    Url = "Practitioner"
+                }
+            });
+
+            // Practitioner - Dra. Padmé Amidala Naberrie
+            bundle.Entry.Add(new Bundle.EntryComponent
+            {
+                FullUrl = "urn:uuid:" + urnPractitionerAmidala,
+                Resource = new Practitioner
+                {
+                    Id = urnPractitionerAmidala,
+                    Name = new List<HumanName>
+                    {
+                        new HumanName
+                        {
+                            Given = new string[] { "Padmé", "Amidala" },
+                            Family = "Naberrie"
+                        }
+                    }
+                },
+                Request = new Bundle.RequestComponent
+                {
+                    Method = Bundle.HTTPVerb.POST,
+                    Url = "Practitioner"
+                }
+            });
+
+            // Encounter
+            bundle.Entry.Add(new Bundle.EntryComponent
+            {
+                FullUrl = "urn:uuid:" + urnEncounter,
+                Resource = new Encounter
+                {
+                    Id = urnEncounter,
+                    Meta = new Meta
+                    {
+                        Profile = ["https://interoperabilidad.minsal.cl/fhir/ig/urgencia/StructureDefinition/EncounterUrg"]
+                    },
+                    Text = new Narrative
+                    {
+                        Status = Narrative.NarrativeStatus.Generated,
+                        Div = "<div xmlns='http://www.w3.org/1999/xhtml'>Atención clínica de urgencia en box 3 para evaluación de abdomen agudo.</div>"
+                    },
+                    Status = Encounter.EncounterStatus.InProgress,
+                    Period = new Period
+                    {
+                        Start = "2024-12-25T14:12:00-04:00"
+                    },
+                    Subject = new ResourceReference
+                    {
+                        Reference = "urn:uuid:" + urnPatient
+                    }
+                },
+                Request = new Bundle.RequestComponent
+                {
+                    Method = Bundle.HTTPVerb.POST,
+                    Url = "Encounter"
+                }
+            });
+
+            // Diagnosis - Apendicitis Aguda
+            bundle.Entry.Add(new Bundle.EntryComponent
+            {
+                FullUrl = "urn:uuid:" + urnDiagnosis,
+                Resource = new Condition
+                {
+                    Id = urnDiagnosis,
+                    ClinicalStatus = new CodeableConcept { Text = "Activo" },
+                    VerificationStatus = new CodeableConcept { Text = "Confirmado" },
+                    Code = new CodeableConcept
+                    {
+                        Coding = new List<Coding>
+                        {
+                            new Coding { Code = "K35", Display = "Apendicitis Aguda" }
+                        },
+                        Text = "Apendicitis Aguda"
+                    },
+                    Subject = new ResourceReference
+                    {
+                        Reference = "urn:uuid:" + urnPatient
+                    },
+                    Encounter = new ResourceReference
+                    {
+                        Reference = "urn:uuid:" + urnEncounter
+                    }
+                },
+                Request = new Bundle.RequestComponent
+                {
+                    Method = Bundle.HTTPVerb.POST,
+                    Url = "Condition"
+                }
+            });
+
+            // Procedimientos/Tratamientos iniciales
+            bundle.Entry.Add(new Bundle.EntryComponent
+            {
+                FullUrl = "urn:uuid:" + urnProcedure,
+                Resource = new Procedure
+                {
+                    Id = urnProcedure,
+                    Status = EventStatus.Completed,
+                    Code = new CodeableConcept
+                    {
+                        Text = "Tratamiento inicial y manejo preoperatorio",
+                    },
+                    Subject = new ResourceReference
+                    {
+                        Reference = "urn:uuid:" + urnPatient
+                    },
+                    Performed = new FhirDateTime("2024-12-25T14:20:00-04:00"),
+                    Performer = new List<Procedure.PerformerComponent>
+                    {
+                        new Procedure.PerformerComponent
+                        {
+                            Actor = new ResourceReference
+                            {
+                                Reference = "urn:uuid:" + urnPractitionerKenobi,
+                                Display = "Dr. Obi-Wan Kenobi"
+                            }
+                        },
+                        new Procedure.PerformerComponent
+                        {
+                            Actor = new ResourceReference
+                            {
+                                Reference = "urn:uuid:" + urnPractitionerAmidala,
+                                Display = "Dra. Padmé Amidala Naberrie"
+                            }
+                        }
+                    },
+                    Note = new List<Annotation>
+                    {
+                        new Annotation { Text = "Administración de Ketoprofeno 100mg IV, Metoclopramida 10mg IV y suero fisiológico 500 cc. Indicaciones preoperatorias establecidas." }
+                    }
+                },
+                Request = new Bundle.RequestComponent
+                {
+                    Method = Bundle.HTTPVerb.POST,
+                    Url = "Procedure"
+                }
+            });
+
+            // Medicación específica - Ketoprofeno
+            bundle.Entry.Add(new Bundle.EntryComponent
+            {
+                FullUrl = "urn:uuid:" + urnMedication1,
+                Resource = new MedicationAdministration
+                {
+                    Status = MedicationAdministration.MedicationAdministrationStatusCodes.Completed,
+                    Medication = new CodeableConcept { Text = "Ketoprofeno 100mg IV" },
+                    Subject = new ResourceReference { Reference = "urn:uuid:" + urnPatient },
+                    Performer = new List<MedicationAdministration.PerformerComponent>
+                    {
+                        new MedicationAdministration.PerformerComponent
+                        {
+                            Actor = new ResourceReference { Reference = "urn:uuid:" + urnPractitionerKenobi, Display = "Dr. Obi-Wan Kenobi" }
+                        }
+                    },
+                    Effective = new FhirDateTime("2024-12-25T14:20:00-04:00")
+                },
+                Request = new Bundle.RequestComponent { Method = Bundle.HTTPVerb.POST, Url = "MedicationAdministration" }
+            });
+
+            // Medicación específica - Metoclopramida
+            bundle.Entry.Add(new Bundle.EntryComponent
+            {
+                FullUrl = "urn:uuid:" + urnMedication2,
+                Resource = new MedicationAdministration
+                {
+                    Status = MedicationAdministration.MedicationAdministrationStatusCodes.Completed,
+                    Medication = new CodeableConcept { Text = "Metoclopramida 10mg IV" },
+                    Subject = new ResourceReference { Reference = "urn:uuid:" + urnPatient },
+                    Performer = new List<MedicationAdministration.PerformerComponent>
+                    {
+                        new MedicationAdministration.PerformerComponent
+                        {
+                            Actor = new ResourceReference { Reference = "urn:uuid:" + urnPractitionerKenobi, Display = "Dr. Obi-Wan Kenobi" }
+                        }
+                    },
+                    Effective = new FhirDateTime("2024-12-25T14:25:00-04:00")
+                },
+                Request = new Bundle.RequestComponent { Method = Bundle.HTTPVerb.POST, Url = "MedicationAdministration" }
+            });
+
+            // Hidratación IV - Suero Fisiológico
+            bundle.Entry.Add(new Bundle.EntryComponent
+            {
+                FullUrl = "urn:uuid:" + urnMedication3,
+                Resource = new MedicationAdministration
+                {
+                    Status = MedicationAdministration.MedicationAdministrationStatusCodes.Completed,
+                    Medication = new CodeableConcept { Text = "Suero Fisiológico 500 cc IV" },
+                    Subject = new ResourceReference { Reference = "urn:uuid:" + urnPatient },
+                    Performer = new List<MedicationAdministration.PerformerComponent>
+                    {
+                        new MedicationAdministration.PerformerComponent
+                        {
+                            Actor = new ResourceReference { Reference = "urn:uuid:" + urnPractitionerAmidala, Display = "Dra. Padmé Amidala Naberrie" }
+                        }
+                    },
+                    Effective = new FhirDateTime("2024-12-25T14:30:00-04:00")
+                },
+                Request = new Bundle.RequestComponent { Method = Bundle.HTTPVerb.POST, Url = "MedicationAdministration" }
+            });
+
+            Json = new FhirJsonSerializer().SerializeToString(bundle);
             Json = Json.Replace("+00:00", "Z");
 
         }
