@@ -5,11 +5,30 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Admision/test": {
-      "get": {
+    "/api/AtencionUrgencia/Admision": {
+      "post": {
         "tags": [
-          "Admision"
+          "AtencionUrgencia"
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatosAdmisionEN"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatosAdmisionEN"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatosAdmisionEN"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK",
@@ -34,10 +53,58 @@
         }
       }
     },
-    "/api/Atencion/recibirAtencion": {
+    "/api/AtencionUrgencia/Triage": {
       "post": {
         "tags": [
-          "Atencion"
+          "AtencionUrgencia"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatosCategorizacionEN"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatosCategorizacionEN"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatosCategorizacionEN"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/AtencionUrgencia/Atencion": {
+      "post": {
+        "tags": [
+          "AtencionUrgencia"
         ],
         "requestBody": {
           "content": {
@@ -82,11 +149,30 @@
         }
       }
     },
-    "/api/Categorizacion/test": {
-      "get": {
+    "/api/AtencionUrgencia/Egreso": {
+      "post": {
         "tags": [
-          "Categorizacion"
+          "AtencionUrgencia"
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatosEgresoEN"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatosEgresoEN"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatosEgresoEN"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK",
@@ -114,9 +200,45 @@
   },
   "components": {
     "schemas": {
-      "DatosAtencionEN": {
+      "DatosAdmisionEN": {
         "type": "object",
         "properties": {
+          "run": {
+            "type": "string",
+            "nullable": true
+          },
+          "fecNac": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefono": {
+            "type": "string",
+            "nullable": true
+          },
+          "etniaCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "etniaDisplay": {
+            "type": "string",
+            "nullable": true
+          },
+          "modalidadDisplay": {
+            "type": "string",
+            "nullable": true
+          },
+          "modalidadCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "urgenciacode": {
+            "type": "string",
+            "nullable": true
+          },
+          "urgencianame": {
+            "type": "string",
+            "nullable": true
+          },
           "nombrePaciente": {
             "type": "string",
             "nullable": true
@@ -129,95 +251,51 @@
             "type": "string",
             "nullable": true
           },
-          "comuna": {
+          "line": {
             "type": "string",
             "nullable": true
           },
-          "derivadaDesde": {
+          "city": {
             "type": "string",
             "nullable": true
           },
-          "derivadaDesdeCorr": {
+          "district": {
             "type": "string",
             "nullable": true
           },
-          "derivadaHacia": {
+          "state": {
             "type": "string",
             "nullable": true
           },
-          "derivadaHaciaCorr": {
+          "country": {
             "type": "string",
             "nullable": true
           },
-          "sintoma": {
+          "nombremedico": {
             "type": "string",
             "nullable": true
           },
-          "medico": {
+          "apellidomedico": {
             "type": "string",
             "nullable": true
           },
-          "diagnostico": {
-            "type": "string",
-            "nullable": true
-          },
-          "intervencionElectiva": {
-            "type": "string",
-            "nullable": true
-          },
-          "solicitudIq": {
-            "type": "string",
-            "nullable": true
-          },
-          "prioridad": {
-            "type": "string",
-            "nullable": true
-          },
-          "prioridadCorr": {
-            "type": "string",
-            "nullable": true
-          },
-          "entrevistaPrequirurgica": {
-            "type": "string",
-            "nullable": true
-          },
-          "tipoServicio": {
-            "type": "string",
-            "nullable": true
-          },
-          "especialidad": {
-            "type": "string",
-            "nullable": true
-          },
-          "organizacion": {
-            "type": "string",
-            "nullable": true
-          },
-          "organizacionCorr": {
-            "type": "string",
-            "nullable": true
-          },
-          "profesionalTentativo": {
-            "type": "string",
-            "nullable": true
-          },
-          "citaProgramada": {
-            "type": "string",
-            "nullable": true
-          },
-          "rol": {
-            "type": "string",
-            "nullable": true
-          },
-          "diagnosticoCorr": {
-            "type": "string",
-            "nullable": true
-          },
-          "estado": {
+          "runMedico": {
             "type": "string",
             "nullable": true
           }
         },
+        "additionalProperties": false
+      },
+      "DatosAtencionEN": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "DatosCategorizacionEN": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "DatosEgresoEN": {
+        "type": "object",
         "additionalProperties": false
       }
     }

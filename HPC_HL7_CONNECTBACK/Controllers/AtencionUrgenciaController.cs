@@ -30,21 +30,21 @@ namespace HPC_HL7_CONNECTBACK.Controllers
         }
         
         [HttpPost("Triage")]
-        public string Categorizacion([FromBody] DatosAdmisionEN request)
+        public string Categorizacion([FromBody] DatosCategorizacionEN request)
         {
-            return _iatencionUrgenciaBL.Categorizacion();
+            return _iatencionUrgenciaBL.Categorizacion(request);
         }
         
         [HttpPost("Atencion")]
-        public string Atencion([FromBody] DatosAdmisionEN request)
+        public string Atencion([FromBody] DatosAtencionEN request)
         {
-            return _iatencionUrgenciaBL.Atencion();
+            return _iatencionUrgenciaBL.Atencion(request);
         }
         
         [HttpPost("Egreso")]
-        public string Egreso([FromBody] DatosAdmisionEN request)
+        public string Egreso([FromBody] DatosEgresoEN request)
         {
-            return _iatencionUrgenciaBL.Egreso();
+            return _iatencionUrgenciaBL.Egreso(request);
         }
     }
 }

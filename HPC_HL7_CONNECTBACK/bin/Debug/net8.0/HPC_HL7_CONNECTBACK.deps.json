@@ -357,7 +357,7 @@
         },
         "runtime": {
           "00_Entities.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -368,7 +368,7 @@
         },
         "runtime": {
           "01_DataLogic.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -383,7 +383,7 @@
         },
         "runtime": {
           "02_BusinessLogic.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

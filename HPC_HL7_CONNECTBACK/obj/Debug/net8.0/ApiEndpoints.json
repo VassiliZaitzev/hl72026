@@ -1,12 +1,18 @@
 [
   {
-    "ContainingType": "HPC_HL7_CONNECTBACK.Controllers.AdmisionController",
-    "Method": "test",
-    "RelativePath": "api/Admision/test",
-    "HttpMethod": "GET",
+    "ContainingType": "HPC_HL7_CONNECTBACK.Controllers.AtencionUrgenciaController",
+    "Method": "Admision",
+    "RelativePath": "api/AtencionUrgencia/Admision",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "_00_Entities.Clases.DatosAdmisionEN",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.String",
@@ -20,9 +26,9 @@
     ]
   },
   {
-    "ContainingType": "HPC_HL7_CONNECTBACK.Controllers.AtencionController",
-    "Method": "recibirAtencion",
-    "RelativePath": "api/Atencion/recibirAtencion",
+    "ContainingType": "HPC_HL7_CONNECTBACK.Controllers.AtencionUrgenciaController",
+    "Method": "Atencion",
+    "RelativePath": "api/AtencionUrgencia/Atencion",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -46,13 +52,45 @@
     ]
   },
   {
-    "ContainingType": "HPC_HL7_CONNECTBACK.Controllers.CategorizacionController",
-    "Method": "test",
-    "RelativePath": "api/Categorizacion/test",
-    "HttpMethod": "GET",
+    "ContainingType": "HPC_HL7_CONNECTBACK.Controllers.AtencionUrgenciaController",
+    "Method": "Egreso",
+    "RelativePath": "api/AtencionUrgencia/Egreso",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "_00_Entities.Clases.DatosEgresoEN",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "HPC_HL7_CONNECTBACK.Controllers.AtencionUrgenciaController",
+    "Method": "Categorizacion",
+    "RelativePath": "api/AtencionUrgencia/Triage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "_00_Entities.Clases.DatosCategorizacionEN",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.String",

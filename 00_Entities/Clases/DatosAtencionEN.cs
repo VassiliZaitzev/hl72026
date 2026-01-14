@@ -16,7 +16,6 @@ namespace _00_Entities.Clases
         public string telefono { get; set; }
         public string etniaCode { get; set; }
         public string etniaDisplay { get; set; }
-        public string modalidadSystem { get; set; }
         public string modalidadDisplay { get; set; }
         public string modalidadCode { get; set; }
         public string urgenciacode { get; set; }
@@ -33,5 +32,20 @@ namespace _00_Entities.Clases
         public string apellidomedico { get; set; }
         public string runMedico { get; set; }
  
+    }
+
+    public class DatosCategorizacionEN
+    {
+
+    }
+
+    public class DatosAtencionEN
+    {
+
+    }
+
+    public class DatosEgresoEN
+    {
+
     }
 }
