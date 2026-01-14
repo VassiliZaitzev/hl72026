@@ -1,15 +1,31 @@
-C:\01.- Fuentes\01.-CRS\Connectathon\HPC.HL7.BACKEND\01_DataLogic\bin\Debug\net8.0\01_DataLogic.deps.json
-C:\01.- Fuentes\01.-CRS\Connectathon\HPC.HL7.BACKEND\01_DataLogic\bin\Debug\net8.0\01_DataLogic.dll
-C:\01.- Fuentes\01.-CRS\Connectathon\HPC.HL7.BACKEND\01_DataLogic\bin\Debug\net8.0\01_DataLogic.pdb
-C:\01.- Fuentes\01.-CRS\Connectathon\HPC.HL7.BACKEND\01_DataLogic\bin\Debug\net8.0\00_Entities.dll
-C:\01.- Fuentes\01.-CRS\Connectathon\HPC.HL7.BACKEND\01_DataLogic\bin\Debug\net8.0\00_Entities.pdb
-C:\01.- Fuentes\01.-CRS\Connectathon\HPC.HL7.BACKEND\01_DataLogic\obj\Debug\net8.0\01_DataLogic.csproj.AssemblyReference.cache
-C:\01.- Fuentes\01.-CRS\Connectathon\HPC.HL7.BACKEND\01_DataLogic\obj\Debug\net8.0\01_DataLogic.GeneratedMSBuildEditorConfig.editorconfig
-C:\01.- Fuentes\01.-CRS\Connectathon\HPC.HL7.BACKEND\01_DataLogic\obj\Debug\net8.0\01_DataLogic.AssemblyInfoInputs.cache
-C:\01.- Fuentes\01.-CRS\Connectathon\HPC.HL7.BACKEND\01_DataLogic\obj\Debug\net8.0\01_DataLogic.AssemblyInfo.cs
-C:\01.- Fuentes\01.-CRS\Connectathon\HPC.HL7.BACKEND\01_DataLogic\obj\Debug\net8.0\01_DataLogic.csproj.CoreCompileInputs.cache
-C:\01.- Fuentes\01.-CRS\Connectathon\HPC.HL7.BACKEND\01_DataLogic\obj\Debug\net8.0\01_DataL.92BD258B.Up2Date
-C:\01.- Fuentes\01.-CRS\Connectathon\HPC.HL7.BACKEND\01_DataLogic\obj\Debug\net8.0\01_DataLogic.dll
-C:\01.- Fuentes\01.-CRS\Connectathon\HPC.HL7.BACKEND\01_DataLogic\obj\Debug\net8.0\refint\01_DataLogic.dll
-C:\01.- Fuentes\01.-CRS\Connectathon\HPC.HL7.BACKEND\01_DataLogic\obj\Debug\net8.0\01_DataLogic.pdb
-C:\01.- Fuentes\01.-CRS\Connectathon\HPC.HL7.BACKEND\01_DataLogic\obj\Debug\net8.0\ref\01_DataLogic.dll
+C:/01.- Fuentes/01.-CRS/Connectathon/HPC.HL7.BACKEND/01_DataLogic/bin/Debug/net8.0/01_DataLogic.deps.json
+C:/01.- Fuentes/01.-CRS/Connectathon/HPC.HL7.BACKEND/01_DataLogic/bin/Debug/net8.0/01_DataLogic.dll
+C:/01.- Fuentes/01.-CRS/Connectathon/HPC.HL7.BACKEND/01_DataLogic/bin/Debug/net8.0/01_DataLogic.pdb
+C:/01.- Fuentes/01.-CRS/Connectathon/HPC.HL7.BACKEND/01_DataLogic/bin/Debug/net8.0/00_Entities.dll
+C:/01.- Fuentes/01.-CRS/Connectathon/HPC.HL7.BACKEND/01_DataLogic/bin/Debug/net8.0/00_Entities.pdb
+C:/01.- Fuentes/01.-CRS/Connectathon/HPC.HL7.BACKEND/01_DataLogic/obj/Debug/net8.0/01_DataLogic.csproj.AssemblyReference.cache
+C:/01.- Fuentes/01.-CRS/Connectathon/HPC.HL7.BACKEND/01_DataLogic/obj/Debug/net8.0/01_DataLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:/01.- Fuentes/01.-CRS/Connectathon/HPC.HL7.BACKEND/01_DataLogic/obj/Debug/net8.0/01_DataLogic.AssemblyInfoInputs.cache
+C:/01.- Fuentes/01.-CRS/Connectathon/HPC.HL7.BACKEND/01_DataLogic/obj/Debug/net8.0/01_DataLogic.AssemblyInfo.cs
+C:/01.- Fuentes/01.-CRS/Connectathon/HPC.HL7.BACKEND/01_DataLogic/obj/Debug/net8.0/01_DataLogic.csproj.CoreCompileInputs.cache
+C:/01.- Fuentes/01.-CRS/Connectathon/HPC.HL7.BACKEND/01_DataLogic/obj/Debug/net8.0/01_DataL.92BD258B.Up2Date
+C:/01.- Fuentes/01.-CRS/Connectathon/HPC.HL7.BACKEND/01_DataLogic/obj/Debug/net8.0/01_DataLogic.dll
+C:/01.- Fuentes/01.-CRS/Connectathon/HPC.HL7.BACKEND/01_DataLogic/obj/Debug/net8.0/refint/01_DataLogic.dll
+C:/01.- Fuentes/01.-CRS/Connectathon/HPC.HL7.BACKEND/01_DataLogic/obj/Debug/net8.0/01_DataLogic.pdb
+C:/01.- Fuentes/01.-CRS/Connectathon/HPC.HL7.BACKEND/01_DataLogic/obj/Debug/net8.0/ref/01_DataLogic.dll
+/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/bin/Debug/net8.0/01_DataLogic.deps.json
+/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/bin/Debug/net8.0/01_DataLogic.dll
+/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/bin/Debug/net8.0/01_DataLogic.pdb
+/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/bin/Debug/net8.0/00_Entities.dll
+/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/bin/Debug/net8.0/00_Entities.pdb
+/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/obj/Debug/net8.0/01_DataLogic.csproj.AssemblyReference.cache
+/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/obj/Debug/net8.0/01_DataLogic.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/obj/Debug/net8.0/01_DataLogic.AssemblyInfoInputs.cache
+/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/obj/Debug/net8.0/01_DataLogic.AssemblyInfo.cs
+/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/obj/Debug/net8.0/01_DataLogic.csproj.CoreCompileInputs.cache
+/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/obj/Debug/net8.0/01_DataLogic.sourcelink.json
+/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/obj/Debug/net8.0/01_DataL.92BD258B.Up2Date
+/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/obj/Debug/net8.0/01_DataLogic.dll
+/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/obj/Debug/net8.0/refint/01_DataLogic.dll
+/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/obj/Debug/net8.0/01_DataLogic.pdb
+/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/obj/Debug/net8.0/ref/01_DataLogic.dll

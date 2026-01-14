@@ -1,32 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\01_DataLogic\\01_DataLogic.csproj": {}
+    "/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/01_DataLogic.csproj": {}
   },
   "projects": {
-    "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\00_Entities\\00_Entities.csproj": {
+    "/Users/jamesjohnson/Desktop/HL7/hl72026/00_Entities/00_Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\00_Entities\\00_Entities.csproj",
+        "projectUniqueName": "/Users/jamesjohnson/Desktop/HL7/hl72026/00_Entities/00_Entities.csproj",
         "projectName": "00_Entities",
-        "projectPath": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\00_Entities\\00_Entities.csproj",
-        "packagesPath": "C:\\Users\\jjohnson\\.nuget\\packages\\",
-        "outputPath": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\00_Entities\\obj\\",
+        "projectPath": "/Users/jamesjohnson/Desktop/HL7/hl72026/00_Entities/00_Entities.csproj",
+        "packagesPath": "/Users/jamesjohnson/.nuget/packages/",
+        "outputPath": "/Users/jamesjohnson/Desktop/HL7/hl72026/00_Entities/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\jjohnson\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/jamesjohnson/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,8 +38,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -80,41 +73,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.415/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\01_DataLogic\\01_DataLogic.csproj": {
+    "/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/01_DataLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\01_DataLogic\\01_DataLogic.csproj",
+        "projectUniqueName": "/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/01_DataLogic.csproj",
         "projectName": "01_DataLogic",
-        "projectPath": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\01_DataLogic\\01_DataLogic.csproj",
-        "packagesPath": "C:\\Users\\jjohnson\\.nuget\\packages\\",
-        "outputPath": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\01_DataLogic\\obj\\",
+        "projectPath": "/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/01_DataLogic.csproj",
+        "packagesPath": "/Users/jamesjohnson/.nuget/packages/",
+        "outputPath": "/Users/jamesjohnson/Desktop/HL7/hl72026/01_DataLogic/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\jjohnson\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/jamesjohnson/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\00_Entities\\00_Entities.csproj": {
-                "projectPath": "C:\\01.- Fuentes\\01.-CRS\\Connectathon\\HPC.HL7.BACKEND\\00_Entities\\00_Entities.csproj"
+              "/Users/jamesjohnson/Desktop/HL7/hl72026/00_Entities/00_Entities.csproj": {
+                "projectPath": "/Users/jamesjohnson/Desktop/HL7/hl72026/00_Entities/00_Entities.csproj"
               }
             }
           }
@@ -128,8 +115,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -150,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.415/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

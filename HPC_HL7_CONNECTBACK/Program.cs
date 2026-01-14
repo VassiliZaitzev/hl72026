@@ -16,10 +16,8 @@ builder.Services.AddCors(options =>
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
-builder.Services.AddScoped<ICategorizacionBL, CategorizacionBL>();
-builder.Services.AddScoped<IAdmisionBL, AdmisionBL>();
-builder.Services.AddScoped<IAtencionBL, AtencionBL>();
 
+builder.Services.AddScoped<IAtencionUrgenciaBL, AtencionUrgenciaBL>();
 
 
 
